@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>HOSTAL ABREGO'S</title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo del hotel y nombre a la izquierda -->
+                <a class="navbar-brand ml-0 my-auto" href="#">
+                    <img src="imagen/logo hostal abregos.png" alt="Logo del hotel" width="100">
+                    Hostal Abrego's
+                </a>
+    
+                <!-- Resto de tu barra de navegación -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habitaciones">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#restaurante">Restaurante</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservas">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="hero" id="inicio">
+            <div class="container text-center">
+                <h1 class="display-4">Bienvenido a Hostal Abrego's</h1>
+                <img src="imagen/fachada-slide1.jpg" alt=""  width="600" height="650">
+                <p class="lead">Un lugar de lujo para tu escapada perfecta</p>
+                <a href="#reservas" class="btn btn-primary btn-lg">Reservar Ahora</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="row" id="habitaciones">
+        <h2>Nuestras Habitaciones</h2>
+        <div class="col-md-4">
+            <img class="img-1"src="imagen/habitacion1-individual.jpg" alt="Habitación Estándar">
+            <h3>Habitación Individual</h3>
+            <p>Una cómoda habitación con vistas espectaculares.</p>
+            <p class="precio">$10.00 por noche</p>
+            <a href="#reservas" class="cta-button">Reservar</a>
+        </div>
+        <div class="col-md-4">
+            <img class="img-2"src="imagen/habitacion2-doble.jpg" >
+            <h3>Habitacion Doble</h3>
+            <p>Un oasis de lujo para una experiencia inolvidable.</p>
+            <p class="precio">$12.00 por noche</p>
+            <a href="#reservas" class="cta-button">Reservar</a>
+        </div>
+        <div class="col-md-4">
+            <img class="img-3"  src="imagen/habitacion3-pareja.jpg"  >
+            <h3>Habitacion pareja</h3>
+            <p>Un oasis de lujo para una experiencia inolvidable.</p>
+            <p class="precio">$14.00 por noche</p>
+            <a href="#reservas" class="cta-button">Reservar</a>
+        </div>
+        <div class="container text-center">
+            <img class="img-4" src="imagen/habitacion4-familiar.jpg " width="600 ">
+            <h3>habitacion familiar</h3>
+            <p>Un oasis de lujo para una experiencia inolvidable.</p>
+            <p class="precio">$16.00 por noche</p>
+            <a href="#reservas" class="cta-button">Reservar</a>
+        </div>
+       
+    </section>
+    <section id="restaurante">
+        <h2>Nuestro Restaurante Gourmet</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="restaurant">
+                    <img src="imagen/comida-mexicana-e1607607952372.jpg" alt="Restaurante 1">
+                    <h3>Platos Deliciosos</h3>
+                    <p>Disfrute de una variedad de platos gourmet preparados con ingredientes frescos y de alta calidad.</p>
+                    <p class="precio">Precio promedio: $40 por persona</p>
+                    <a href="#reservas" class="cta-button">Reservar Mesa</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="restaurant">
+                    <img src="imagen/comida.jpg" alt="Restaurante 2">
+                    <h3>Ambiente Acogedor</h3>
+                    <p>Nuestro restaurante ofrece un ambiente acogedor y relajante para disfrutar de una comida especial.</p>
+                    <p class="precio">Precio promedio: $25 por persona</p>
+                    <a href="#reservas" class="cta-button">Reservar Mesa</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="restaurant">
+                    <img src="imagen/Comida-típica-mexicana-_-Huarache.jpg" alt="Restaurante 3">
+                    <h3>Cócteles Exclusivos</h3>
+                    <p>Pruebe nuestros cócteles exclusivos preparados por nuestros talentosos mixólogos.</p>
+                    <p class="precio">Precio promedio: $12 por cóctel</p>
+                    <a href="#reservas" class="cta-button">Reservar Mesa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="reservas">
+            <div class="reservation-container">
+                <h2>Reservar una Habitación</h2>
+                <p>Complete el formulario a continuación para hacer su reserva.</p>
+                <form action="procesar_reserva.php" method="POST" class="reservation-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="habitacion">Tipo de Habitación:</label>
+                        <select id="habitacion" name="habitacion">
+                            <option value="estandar">Habitación Estándar</option>
+                            <option value="lujo">Suite de Lujo</option>
+                            <!-- Agregar más opciones -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-checkin">Fecha de Check-in:</label>
+                        <input type="date" id="fecha-checkin" name="fecha-checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-checkout">Fecha de Check-out:</label>
+                        <input type="date" id="fecha-checkout" name="fecha-checkout" required>
+                    </div>
+                    <button type="submit" class="cta-button">Reservar Ahora</button>
+                </form>
+            </div>
+        </section>
+    
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para consultas y asistencia, por favor contáctenos:</p>
+            <address>
+                <p>Hostal Abrego's</p>
+                <p>Dirección: Calle Merceditas Cáceres Oriente # 4-6, Juayúa, Sonsonate, El Salvador C.A</p>
+                <p>Teléfono: 7646-7502</p>
+            </address>
+        
+            <div class="contact-buttons">
+                <a href="tel:+176467502" class="cta-button">Llamar</a>
+                <a href="mailto:correo@hostalabrigo.com" class="cta-button">Enviar Correo</a>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-4BW+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></script>
+</body>
+</html>
+    
+ 
